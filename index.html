@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/styles/style.min.css">
 </head>
 
@@ -57,45 +57,88 @@
             <section>
                 <h4>Contact</h4>
                 <ul class='list'>
-                    <li><strong>email</strong>: k.oleg.pm@gmail.com</li>
-                    <li><strong>LinkedIn</strong>: href to linked</li>
-                    <li><strong>Git</strong>: href to Git</li>
+                    <li><a href="https://www.linkedin.com/in/oleg-kochsheyev/" target="_">LinkedIn</a></li>
+                    <li><a href="https://github.com/petrgali" target="_">GitHub</a></li>
                 </ul>
             </section>
         </section>
         <section class='experience'>
-            <hr>
-            <h4>Code example</h4>
-            <pre><code class="lang-go"><span class="function"><span class="keyword">func</span> <span class="title">Max</span><span class="params">(arr []int)</span></span> int {
-        <span>swap</span> := <span>true</span>
-        <span>count</span> := <span>0</span>
-        <span>for</span> range arr {
-            <span>count</span>++
-        }
-        <span>for</span> <span>swap</span> {
-            <span>swap</span> = <span>false</span>
-            <span>for</span> k := <span>1</span>; k &lt; <span>count</span>; k++ {
+            <article>
+                <h4>Experience</h4>
+                <section class='exp'>
+                    <p class='title'><strong>Web Developer</strong></p>
+                    <p class='summary'>FinnPlay | 07.2021 - present</p>
+                    <ul>
+                        <li>Frontend React.js development</li>
+                    </ul>
+                </section>
+                <section class='exp'>
+                    <p class='title'><strong>Software Developer</strong></p>
+                    <p class='summary'>Alem | 11.2019 - 01.2021</p>
+                    <ul>
+                        <li>Frontend React.js/Vue.js development</li>
+                        <li>Backend Go/Node.js REST API development</li>
+                    </ul>
+                </section>
+            </article>
+            <article>
+                <h4>Education & Courses</h4>
+                <sectiom class='exp'>
+                    <p class='title'>
+                        <strong>Alem School</strong>
+                    </p>
+                    <p class='summary'>
+                        November 2019 - current time
+                    </p>
+                    <ul>
+                        <li>Golang web development</li>
+                        <li>JavaScript client side development</li>
+                    </ul>
+                </sectiom>
+                <sectiom class='exp'>
+                    <p class='title'>
+                        <strong>North Kazakhstan State University</strong>
+                    </p>
+                    <p class='summary'>
+                        2004 - 2008
+                    </p>
+                    <ul>
+                        <li>Information Technology</li>
+                    </ul>
+                </sectiom>
+            </article>
+            <article>
+                <h4>Code sample</h4>
+                <pre><code class="lang-go"><span class="function"><span class="keyword">func</span> <span class="title">Max</span><span class="params">(arr []int)</span></span> int {
+                <span>swap</span> := <span>true</span>
+                <span>count</span> := <span>0</span>
                 <span>for</span> range arr {
-                    <span>if</span> arr[k-<span>1</span>] &gt; arr[k] {
-                        arr[k], arr[k-<span>1</span>] = arr[k-<span>1</span>], arr[k]
-                        <span>swap</span> = <span>true</span>
+                    <span>count</span>++
+                }
+                <span>for</span> <span>swap</span> {
+                    <span>swap</span> = <span>false</span>
+                    <span>for</span> k := <span>1</span>; k &lt; <span>count</span>; k++ {
+                        <span>for</span> range arr {
+                            <span>if</span> arr[k-<span>1</span>] &gt; arr[k] {
+                                arr[k], arr[k-<span>1</span>] = arr[k-<span>1</span>], arr[k]
+                                <span>swap</span> = <span>true</span>
+                            }
+                        }
                     }
                 }
+                <span>return</span> arr[<span>count</span>-<span>1</span>]
             }
-        }
-        <span>return</span> arr[<span>count</span>-<span>1</span>]
-    }
-    </code></pre>
-            <h4>Education</h4>
-            <ul>
-                <li><strong>Alem School</strong> - November 2019 - current time </li>
-                <li><strong>2004-2008</strong> - North Kazakhstan State University
-                    <strong>Major Feilds of studies:</strong> Information Technologies, Bachelor degree
-                </li>
-            </ul>
-            <h4>English</h4>
-            <p><strong>A2</strong> - according to Epam training center testing result.</p>
-            </div>
+            </code></pre>
+            </article>
+            <article>
+                <h4>Projects</h4>
+                <ul>
+                    <li><strong>Alem School</strong> - November 2019 - current time </li>
+                    <li><strong>2004-2008</strong> - North Kazakhstan State University
+                        <strong>Major Feilds of studies:</strong> Information Technologies, Bachelor degree
+                    </li>
+                </ul>
+            </article>
         </section>
     </main>
 </body>
