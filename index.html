@@ -6,65 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" type="text/css" href="/styles/style.min.css">
 </head>
 
 <body>
-    <div class="noise"></div>
-    <div class="overlay"></div>
-    <div class="container">
-    <header>
-    
-        <img src="pipboy.png" class="img">
-        <h1>Oleg Kochsheyev</h1>
-    </header>
-    <hr>
-    <h4>Contact information</h4>
-    <ul>
-        <li><strong>email</strong>: opelliek@gmail.com</li>
-        <li><strong>tel</strong>: +77078359588</li>
-    </ul>
-    <p>I&#39;m constantly improving my skills and trying to develop myself as a professional. I believe that my ability
-        to learn quickly and work in a team would maximize the enterprise benefits.</p>
-    <h4>My skills are</h4>
-    <ul>
-        <li>GIT</li>
-        <li>Docker</li>
-        <li>Adobe Photoshop</li>
-        <li>Golang</li>
-        <li>HTML/CSS</li>
-    </ul>
-    <h4>Code example</h4>
-    <pre><code class="lang-go"><span class="function"><span class="keyword">func</span> <span class="title">Max</span><span class="params">(arr []int)</span></span> int {
-        <span>swap</span> := <span>true</span>
-        <span>count</span> := <span>0</span>
-        <span>for</span> range arr {
-            <span>count</span>++
-        }
-        <span>for</span> <span>swap</span> {
-            <span>swap</span> = <span>false</span>
-            <span>for</span> k := <span>1</span>; k &lt; <span>count</span>; k++ {
-                <span>for</span> range arr {
-                    <span>if</span> arr[k-<span>1</span>] &gt; arr[k] {
-                        arr[k], arr[k-<span>1</span>] = arr[k-<span>1</span>], arr[k]
-                        <span>swap</span> = <span>true</span>
+    <main id='root'>
+        <section class='about'>
+            <header>
+                <img class='profile'
+                    src='https://avatars.githubusercontent.com/u/52791123?s=400&u=7e0c02bafd08d6e4d82f41de1750f002f1d99aaf&v=4'
+                    class='img' alt='cv profile photo'>
+                <h1>
+                    <p>Oleg</p>
+                    <p>Kochsheyev</p>
+                </h1>
+            </header>
+            <article class='bio'>
+                <p>I&#39;m constantly improving my skills and trying to develop myself as a professional. I believe that
+                    my
+                    ability
+                    to learn quickly and work in a team would maximize the enterprise benefits.
+                </p>
+            </article>
+            <section>
+                <h4>Skills & Tools</h4>
+                <ul class='list'>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>React.js/Redux</li>
+                    <li>HTML/CSS/Material UI</li>
+                    <li>Golang/Node.js</li>
+                    <li>REST API</li>
+                    <li>TCP/UDP/HTTP/WebSocket</li>
+                    <li>PostgreSQL</li>
+                    <li>Docker</li>
+                    <li>Linux/bash/Git</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Languages</h4>
+                <ul class='list'>
+                    <li><strong>English</strong>: B1 Intermediate</li>
+                    <li><strong>Russian</strong>: Native</li>
+                    <li><strong>Kazakh</strong>: Elementary</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Contact</h4>
+                <ul class='list'>
+                    <li><a href="https://www.linkedin.com/in/oleg-kochsheyev/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/petrgali" target="_blank">GitHub</a></li>
+                </ul>
+            </section>
+        </section>
+        <section class='experience'>
+            <article>
+                <h4>Experience</h4>
+                <section class='exp'>
+                    <p class='title'><strong>Web Developer</strong></p>
+                    <p class='summary'>FinnPlay | 07.2021 - present</p>
+                    <ul>
+                        <li>Frontend React.js development</li>
+                    </ul>
+                </section>
+                <section class='exp'>
+                    <p class='title'><strong>Software Developer</strong></p>
+                    <p class='summary'>Alem | 11.2019 - 01.2021</p>
+                    <ul>
+                        <li>Frontend React.js/Vue.js development</li>
+                        <li>Backend Go/Node.js REST API development</li>
+                    </ul>
+                </section>
+            </article>
+            <article>
+                <h4>Education</h4>
+                <sectiom class='exp'>
+                    <p class='title'>
+                        <strong>Alem School</strong>
+                    </p>
+                    <p class='summary'>
+                        November 2019 - current time
+                    </p>
+                    <ul>
+                        <li>Golang web development</li>
+                        <li>JavaScript client side development</li>
+                    </ul>
+                </sectiom>
+                <sectiom class='exp'>
+                    <p class='title'>
+                        <strong>North Kazakhstan State University</strong>
+                    </p>
+                    <p class='summary'>
+                        2004 - 2008
+                    </p>
+                    <ul>
+                        <li>Information Technology</li>
+                    </ul>
+                </sectiom>
+            </article>
+            <article>
+                <h4>Code sample</h4>
+                <pre><code class="Go"><span class="function"><span class="keyword">func</span> <span class="title">Max</span><span class="params">(arr []int)</span></span> int {
+                <span>swap</span> := <span>true</span>
+                <span>count</span> := <span>0</span>
+                <span>for</span> <span>swap</span> {
+                    <span>swap</span> = <span>false</span>
+                    <span>for</span> k := <span>1</span>; k &lt; <span>count</span>; k++ {
+                        <span>for</span> range arr {
+                            <span>if</span> arr[k-<span>1</span>] &gt; arr[k] {
+                                arr[k], arr[k-<span>1</span>] = arr[k-<span>1</span>], arr[k]
+                                <span>swap</span> = <span>true</span>
+                            }
+                        }
                     }
                 }
+                <span>return</span> arr[<span>count</span>-<span>1</span>]
             }
-        }
-        <span>return</span> arr[<span>count</span>-<span>1</span>]
-    }
-    </code></pre>
-    <h4>Education</h4>
-    <ul>
-        <li><strong>Alem School</strong> - November 2019 - current time </li>
-        <li><strong>2004-2008</strong> - North Kazakhstan State University
-            <strong>Major Feilds of studies:</strong> Information Technologies, Bachelor degree</li>
-    </ul>
-    <h4>English</h4>
-    <p><strong>A2</strong> - according to Epam training center testing result.</p>
-
-</div>
+            </code></pre>
+            </article>
+            <article>
+                <h4>Projects</h4>
+                <div class='project'>
+                    <a href="https://rslang-team55-petrgali.netlify.app/" target='_blank'>RS Lang</a>
+                    <div class='stack'>React | Redux | Express.js | Mongo.db</div>
+                </div>
+                <div class='project'>
+                    <a href="https://devastator.herokuapp.com/" target='_blank'>Devastator - arcade game</a>
+                    <div class='stack'> Vanilla JS | Go | PostgreSQL | Docker</div>
+                </div>
+            </article>
+            <footer>
+                <a href='https://rs.school/js/' target='_blank'>
+                    <img src='https://rs.school/images/rs_school_js.svg' class='logo' alt='logo' />
+                </a>
+                <div>2021</div>
+                <a href='https://github.com/petrgali' target="_blank">
+                    <img src='http://pngimg.com/uploads/github/github_PNG72.png' class='logo' alt='logo' />
+                </a>
+            </footer>
+        </section>
+    </main>
 </body>
 
 </html>
