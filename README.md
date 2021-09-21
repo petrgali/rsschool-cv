@@ -1,1 +1,1 @@
-[cv](https://petrgali.github.io/rsschool-cv/cv)
+[cv](https://petrgali.github.io/rsschool-cv/)
